@@ -1,3 +1,35 @@
-<p>
-  main-window works!
-</p>
+<app-navigation-bar></app-navigation-bar>
+
+<div class="container">
+  <form action="">
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="email" type="text" class="validate" />
+            <label for="email">Enter Something</label>
+            <span class="helper-text" data-error="wrong" data-success="right"
+              >Enter Title of The Book, Author Name or Anything after Selecting
+              From Radio Buttons Given Above!</span
+            >
+            <p>
+              <label>
+                <input name="group1" type="radio" checked />
+                <span>Book Title</span>
+              </label>
+            </p>
+            <p>
+              <label>
+                <input name="group1" type="radio" />
+                <span>Author</span>
+              </label>
+            </p>
+            <a class="waves-effect waves-light btn right btn-large"
+              ><i class="material-icons right large">send</i>Search Book</a
+            >
+          </div>
+        </div>
+      </form>
+    </div>
+  </form>
+</div>
