@@ -20,4 +20,20 @@ export class BookServiceService {
       this.httpHeader
     );
   }
+
+  public findBooksbyAuthor(nameofAuthor: String) {
+    return this.httpRequest.get(
+      "https://www.googleapis.com/books/v1/volumes?q=" +
+        nameofAuthor +
+        "+inauthor",
+      this.httpHeader
+    );
+  }
+
+  public findBooksByTitle(title: String) {
+    return this.httpRequest.get(
+      "https://www.googleapis.com/books/v1/volumes?q=" + title + "+intitle",
+      this.httpHeader
+    );
+  }
 }

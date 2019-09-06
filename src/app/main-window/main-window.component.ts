@@ -41,4 +41,30 @@ export class MainWindowComponent implements OnInit {
       this.responseData = data["items"];
     });
   }
+
+  getSearchResult() {
+    if (
+      this.enteredText.value != "" &&
+      this.radioButtonSelected.value == "Author"
+    ) {
+      this.bookService
+        .findBooksbyAuthor(this.enteredText.value)
+        .subscribe(data => {
+          this.responseData = data["items"];
+          console.log(this.responseData);
+        });
+    }
+
+    if (
+      this.enteredText.value != "" &&
+      this.radioButtonSelected.value == "Title"
+    ) {
+      this.bookService
+        .findBooksByTitle(this.enteredText.value)
+        .subscribe(data => {
+          this.responseData = data["items"];
+          console.log(this.responseData);
+        });
+    }
+  }
 }
