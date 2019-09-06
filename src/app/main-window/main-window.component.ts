@@ -10,12 +10,6 @@ export class MainWindowComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
-
-  // bookform = new FormGroup({
-  //   textEntered: new FormControl(),
-  //   radioButtonSelected: new FormControl()
-  // });
-
   enteredText = new FormControl("");
   radioButtonSelected = new FormControl("");
 
