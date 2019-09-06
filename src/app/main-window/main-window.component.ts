@@ -36,8 +36,9 @@ export class MainWindowComponent implements OnInit {
       // console.log(data["items"][0]["volumeInfo"]["description"]);
       //Getting the Thumbnail Image of the Book!
       // console.log(data["items"][0]["volumeInfo"]["imageLinks"]["thumbnail"]);
+      console.log(data["items"][0]["volumeInfo"]["previewLink"]);
+
+      this.responseData = data["items"];
     });
-    // this.single = this.responseData[0];
-    // console.log(this.single);
   }
 }

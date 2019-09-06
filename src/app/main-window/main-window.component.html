@@ -50,4 +50,33 @@
       </form>
     </div>
   </form>
+
+  <div class="row" *ngFor="let item of responseData">
+    <div class="col s12 m7">
+      <div class="card">
+        <div class="card-image">
+          <img [src]="item['volumeInfo']['imageLinks']['thumbnail']" />
+          <span class="card-title">{{ item["volumeInfo"]["title"] }}</span>
+        </div>
+        <div class="card-content">
+          <b>Publushed Date: {{ item["volumeInfo"]["publishedDate"] }}</b>
+          <br />
+          <b>Publisher: {{ item["volumeInfo"]["publisher"] }} </b>
+          <br />
+          <b>Authors:</b>
+          <ul>
+            <li *ngFor="let author of item['volumeInfo']['authors']">
+              {{ author }}
+            </li>
+          </ul>
+          <p><b>Description:</b> {{ item["volumeInfo"]["description"] }}</p>
+        </div>
+        <div class="card-action">
+          <a [attr.href]="item['volumeInfo']['previewLink']">{{
+            item["volumeInfo"]["title"]
+          }}</a>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
