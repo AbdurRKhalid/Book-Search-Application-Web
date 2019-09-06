@@ -9,6 +9,8 @@ The Application Provides very basic information such as Publisher, Date of Publi
 
 The User is also able to see the preview of the book by clicking at the Orange Colored Book Title as well.
 
+![The Screen-Shot] (https://github.com/AbdurRKhalid/Book-Search-Application-Web/blob/master/src/assets/Screenshot%20(181).png)
+
 # BookSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
