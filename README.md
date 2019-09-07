@@ -9,7 +9,7 @@ The Application Provides very basic information such as Publisher, Date of Publi
 
 The User is also able to see the preview of the book by clicking at the Orange Colored Book Title as well.
 
-[Screen-Shot] (src/assets/Screenshot%20(181).png)
+![Screen-Shot] (src/assets/Screenshot%20(181).png)
 
 # BookSearch
 
